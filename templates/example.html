@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <title>FE BE example</title>
+    <style>
+        body{
+            font-family: 'Titillium Web', sans-serif;
+            text-align: center;
+            font-size: 150%;
+            padding-top: 20px;
+            background-color: lightyellow;
+        }
+        input{
+            font-size: 100%;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Front-end Back-end example</h1>
+    <p>Small example on how you can 'catch' buttons clicked and handle that input on the back-end side of a Flask Web App.</p>
+    <form method="POST">  
+        <label for="current_text">Current text</label><br>
+        <input type="text" id="I_text" name="current_text" value="{{text_field_value}}"><br>
+        <input type="submit" value="update" name="action">
+        <input type="submit" value="delete" name="action">
+        <input type="submit" value="reset" name="action">
+
+    </form>
+</body>
+</html>
