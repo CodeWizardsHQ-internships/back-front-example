@@ -25,7 +25,6 @@ def home():
 
     return render_template('example.html', text_field_value = text_field_value_back_end)
 
-    
 
 # ---- FUNCTIONS ----    
 
